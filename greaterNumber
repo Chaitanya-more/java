@@ -1,0 +1,21 @@
+package maxNumber;
+import java.util.Scanner;
+public class maxNumber {
+	public static void main(String args[]) {
+      	int a, b, c, d;
+      	int max;
+      	try(Scanner s = new Scanner(System.in)){
+      	System.out.println("Enter four number to find maximum in it:  ");
+      	a=s.nextInt();                                                     //Taking input from user.
+      	b=s.nextInt();
+      	c=s.nextInt();
+      	d=s.nextInt();
+      	
+      	max = (a>b&&a>c&&a>d)?a:(b>c&&b>d)?b:(c>d)?c:d;
+      	
+      	System.out.println("The greater number is: "+ max);
+      	
+		
+	} 
+  }
+}
